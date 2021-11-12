@@ -7,9 +7,6 @@ use Omnipay\Common\AbstractGateway;
 
 class Gateway extends AbstractGateway
 {
-
-    public $countryCode = 'NZ';
-
     /**
      * @return string
      */
