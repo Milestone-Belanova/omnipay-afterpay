@@ -41,7 +41,7 @@ class PurchaseRequest extends AbstractRequest
         }
 
         $data = array(
-            'totalAmount'     => array(
+            'amount'          => array(
                 'amount'      => $this->getAmount(),
                 'currency'    => $this->getCurrency(),
             ),
@@ -55,8 +55,8 @@ class PurchaseRequest extends AbstractRequest
                 'name'        => $card->getBillingName(),
                 'line1'       => $card->getBillingAddress1(),
                 'line2'       => $card->getBillingAddress2(),
-                'suburb'      => $card->getBillingCity(),
-                'state'       => $card->getBillingState(),
+                'area1'       => $card->getBillingCity(),
+                'region'      => $card->getBillingState(),
                 'postcode'    => $card->getBillingPostcode(),
                 'countryCode' => $card->getBillingCountry(),
                 'phoneNumber' => $card->getBillingPhone(),
@@ -65,8 +65,8 @@ class PurchaseRequest extends AbstractRequest
                 'name'        => $card->getShippingName(),
                 'line1'       => $card->getShippingAddress1(),
                 'line2'       => $card->getShippingAddress2(),
-                'suburb'      => $card->getShippingCity(),
-                'state'       => $card->getShippingState(),
+                'area1'       => $card->getShippingCity(),
+                'region'      => $card->getShippingState(),
                 'postcode'    => $card->getShippingPostcode(),
                 'countryCode' => $card->getShippingCountry(),
                 'phoneNumber' => $card->getShippingPhone(),
