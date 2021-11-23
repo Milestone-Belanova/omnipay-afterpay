@@ -176,6 +176,6 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         $subinfo[] = 'PHP/'.PHP_VERSION;
         $subinfo[] = 'Merchant/'.$this->getMerchantId();
 
-        return 'Omnipay-Afterpay ('.join('; ', $subinfo).')' . $this->getUserAgentMerchantUrl();
+        return 'Omnipay-Afterpay ('.join('; ', $subinfo).') ' . $this->getUserAgentMerchantUrl();
     }
 }
